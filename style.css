@@ -1,0 +1,131 @@
+/* Reset and Global Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    background-image: url('./frontbackground.jpg');
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Style for h1 - Increase Font Size */
+h1 {
+    font-size: 48px; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: makes the text bold */
+    color: #ffffff; /* Optional: sets the text color */
+    margin: 10px 0; /* Optional: controls spacing above/below */
+}
+
+/* Box Behind Name and Description */
+.text-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparent white */
+    padding: 20px; /* Adds space inside the box */
+    border-radius: 10px; /* Rounds the corners */
+    display: inline-block; /* Adjusts to the content size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    margin-top: 10px; /* Adds space above the box */
+}
+
+
+/* Container Styling */
+.container {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    justify-content: flex-start;
+    width: 90%;
+    max-width: 6000px;
+    background: rgb(37, 38, 40);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px; /* Space between sections */
+    height:650px;
+}
+
+/* Profile Picture Styling */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.profile-pic {
+    width: 480px; /* Width for rectangle shape */
+    height: 400px; /* Height for rectangle shape */
+    object-fit: cover; /* Prevent image distortion */
+    border: 3px solid #050404; /* Optional border */
+    border-radius: 10px; /* Slightly rounded corners */
+}
+
+/* Social Media Icons Styling */
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20px; /* Space to the right of the profile picture */
+    gap: 15px; /* Spacing between icons */
+}
+
+.icon {
+    font-size: 30px;
+    color: #7c8c94; /* Default color */
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #005582; /* Hover effect */
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Buttons Styling */
+/* Buttons Section */
+.buttons {
+    display: flex;
+    justify-content: space-between; /* Space evenly between buttons */
+    width: 100%; /* Full width of the parent container */
+    margin-top: 20px; /* Adds space above the buttons */
+}
+
+.button {
+    width: 44%; /* Set each button to take ~50% width with spacing */
+    height: 140px; /* Adjust the height to make it square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000; /* Black color for buttons */
+    color: white;
+    font-size: 20px; /* Larger font size */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #446d83; /* Hover effect */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
